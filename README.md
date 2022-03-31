@@ -1210,6 +1210,5 @@ int main(){
 	obj.caltime(200);
 	obj.caltime(100);
 	obj.caltime(50);
-	obj.display(1000);
 	return 0;
 }
