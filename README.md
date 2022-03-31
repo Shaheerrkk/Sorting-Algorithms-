@@ -1,6 +1,4 @@
-# Sorting-Algorithms-
 
-code : 
 #include<iostream>
 #include<ctime>
 #include<cstdlib>
@@ -399,6 +397,7 @@ class sorte{
 					    cout << "Time taken by program is : " << fixed
 					         << ct[i] << setprecision(9);
 					    cout << " sec" << endl;
+					    break;
 					}
 					if(i==2)
 					{
@@ -428,6 +427,7 @@ class sorte{
 					    cout << "Time taken by program is : " << fixed
 					         << ct[i] << setprecision(9);
 					    cout << " sec" << endl;
+					    break;
 					}
 					if(i==4)
 					{
@@ -518,6 +518,7 @@ class sorte{
 					    cout << "Time taken by program is : " << fixed
 					         << ct[i] << setprecision(9);
 					    cout << " sec" << endl;
+					    break;
 					}
 					if(i==2)
 					{
@@ -637,6 +638,7 @@ class sorte{
 					    cout << "Time taken by program is : " << fixed
 					         << ct[i] << setprecision(9);
 					    cout << " sec" << endl;
+					    break;
 					}
 					if(i==2)
 					{
@@ -756,6 +758,7 @@ class sorte{
 					    cout << "Time taken by program is : " << fixed
 					         << ct[i] << setprecision(9);
 					    cout << " sec" << endl;
+					    break;
 					}
 					if(i==2)
 					{
@@ -875,6 +878,7 @@ class sorte{
 					    cout << "Time taken by program is : " << fixed
 					         << ct[i] << setprecision(9);
 					    cout << " sec" << endl;
+					    break;
 					}
 					if(i==2)
 					{
@@ -994,6 +998,7 @@ class sorte{
 					    cout << "Time taken by program is : " << fixed
 					         << ct[i] << setprecision(9);
 					    cout << " sec" << endl;
+					    break;
 					}
 					if(i==2)
 					{
@@ -1023,6 +1028,7 @@ class sorte{
 					    cout << "Time taken by program is : " << fixed
 					         << ct[i] << setprecision(9);
 					    cout << " sec" << endl;
+					    break;
 					}
 					if(i==4)
 					{
@@ -1198,6 +1204,53 @@ class sorte{
 				}
 			}
 		}
+		void file()
+		{
+					
+			
+			for(int i=0 ; i<50; i++)
+			{
+				std::ofstream outfile;
+				outfile.open("50.txt", std::ios_base::app);
+				outfile <<arr[i]<<endl;
+			}
+			for(int i=0 ; i<50; i++)
+			{
+				std::ofstream outfile;
+				outfile.open("100.txt", std::ios_base::app);
+				outfile <<arr2[i]<<endl;
+			}
+			for(int i=0 ; i<50; i++)
+			{
+				std::ofstream outfile;
+				outfile.open("200.txt", std::ios_base::app);
+				outfile <<arr3[i]<<endl;
+			}
+			for(int i=0 ; i<50; i++)
+			{
+				std::ofstream outfile;
+				outfile.open("300.txt", std::ios_base::app);
+				outfile <<arr4[i]<<endl;
+			}
+			for(int i=0 ; i<50; i++)
+			{
+				std::ofstream outfile;
+				outfile.open("400.txt", std::ios_base::app);
+				outfile <<arr5[i]<<endl;
+			}
+			for(int i=0 ; i<50; i++)
+			{
+				std::ofstream outfile;
+				outfile.open("500.txt", std::ios_base::app);
+				outfile <<arr6[i]<<endl;
+			}
+			for(int i=0 ; i<50; i++)
+			{
+				std::ofstream outfile;
+				outfile.open("1000.txt", std::ios_base::app);
+				outfile <<arr7[i]<<endl;
+			}
+		}
 };
 using namespace std;
 int main(){
@@ -1210,5 +1263,6 @@ int main(){
 	obj.caltime(200);
 	obj.caltime(100);
 	obj.caltime(50);
+	obj.file();
 	return 0;
 }
